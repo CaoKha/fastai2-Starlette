@@ -8,10 +8,10 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = YOUR_GDRIVE_LINK_HERE
-export_file_name = 'export.pkl'
+export_file_url = "https://www.dropbox.com/s/lya2a16ca27dpig/resnet18.pkl?raw=1"
+export_file_name = 'resnet18.pkl'
 
-classes = YOUR_CLASSES_HERE
+classes = ['Agrostemma-githago_Cotyledon', 'Agrostemma-githago_Foliage', 'Agrostemma-githago_Intermediate', 'Beta-vulgaris_Cotyledon', 'Beta-vulgaris_Foliage', 'Beta-vulgaris_Intermediate', 'Crepis-setosa_Cotyledon', 'Crepis-setosa_Foliage', 'Crepis-setosa_Intermediate']
 path = Path(__file__).parent
 
 app = Starlette()
